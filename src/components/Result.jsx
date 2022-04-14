@@ -1,4 +1,4 @@
-import {Alert, Box, Checkbox, Flex, Grid, Input, Text} from "@chakra-ui/react";
+import {Alert, Checkbox, Flex, Grid, Text} from "@chakra-ui/react";
 import {useState} from "react";
 import styled from "@emotion/styled";
 import {css} from "@emotion/react";
@@ -35,7 +35,6 @@ const ResultItem = ({item}) => {
 
     )
 }
-const getStatusBadgeColor = (isValid, isRead) => isRead ? 'gray.500' : (isValid ? 'green' : 'red');
 
 const StyledAlert = styled(Alert)`
   ${({isRead}) => isRead && css`
